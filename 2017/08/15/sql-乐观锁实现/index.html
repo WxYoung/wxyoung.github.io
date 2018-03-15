@@ -83,11 +83,11 @@
 <meta name="keywords" content="sql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sql-乐观锁实现">
-<meta property="og:url" content="https://wxyoung.github.io/2018/01/15/sql-乐观锁实现/index.html">
+<meta property="og:url" content="https://wxyoung.github.io/2017/08/15/sql-乐观锁实现/index.html">
 <meta property="og:site_name" content="Wx_Young&#39;Blog">
 <meta property="og:description" content="为什么需要锁（并发控制）？在多用户环境中，在同一时间可能会有多个用户更新相同的记录，这会产生冲突。这就是著名的并发性问题。典型的冲突有：1.丢失更新：一个事务的更新覆盖了其它事务的更新结果，就是所谓的更新丢失。例如：用户A把值从6改为2，用户B把值从2改为6，则用户A丢失了他的更新。2.脏读：当一个事务读取其它完成一半事务的记录时，就会发生脏读取。例如：用户A,B看到的值都是6，用户B把值改为2，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T08:35:36.563Z">
+<meta property="og:updated_time" content="2018-03-15T09:03:37.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sql-乐观锁实现">
 <meta name="twitter:description" content="为什么需要锁（并发控制）？在多用户环境中，在同一时间可能会有多个用户更新相同的记录，这会产生冲突。这就是著名的并发性问题。典型的冲突有：1.丢失更新：一个事务的更新覆盖了其它事务的更新结果，就是所谓的更新丢失。例如：用户A把值从6改为2，用户B把值从2改为6，则用户A丢失了他的更新。2.脏读：当一个事务读取其它完成一半事务的记录时，就会发生脏读取。例如：用户A,B看到的值都是6，用户B把值改为2，">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://wxyoung.github.io/2018/01/15/sql-乐观锁实现/"/>
+  <link rel="canonical" href="https://wxyoung.github.io/2017/08/15/sql-乐观锁实现/"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wxyoung.github.io/2018/01/15/sql-乐观锁实现/">
+    <link itemprop="mainEntityOfPage" href="https://wxyoung.github.io/2017/08/15/sql-乐观锁实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wx_Young">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-15T16:32:20+08:00">
-                2018-01-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T16:32:20+08:00">
+                2017-08-15
               </time>
             
 
@@ -354,8 +354,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/15/other-七牛token获取不到/" rel="next" title="other-七牛token获取不到">
-                <i class="fa fa-chevron-left"></i> other-七牛token获取不到
+              <a href="/2017/08/12/sql-利用leftJoin获取右表的补集/" rel="next" title="sql-利用leftJoin获取左边对应右表的补集">
+                <i class="fa fa-chevron-left"></i> sql-利用leftJoin获取左边对应右表的补集
               </a>
             
           </div>
@@ -363,6 +363,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/23/mysql-mysql支持emoji表情/" rel="prev" title="mysql-mysql支持emoji表情">
+                mysql-mysql支持emoji表情 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
